@@ -1,1 +1,1 @@
-
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/RitzyErmine7485/FinalQualityAssurance/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/RitzyErmine7485/FinalQualityAssurance/tree/main)
