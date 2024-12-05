@@ -41,9 +41,9 @@ jobs:
           command: mvn test
 
       - store_test_results:
-          path: screenshots/
+          path: test-results
       - store_artifacts:
-          path: screenshots/
+          path: job
 
       - save_cache:
           paths:
