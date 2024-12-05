@@ -37,11 +37,20 @@ jobs:
           command: mvn -B -DskipTests clean package
 
       - run:
-          name: Run Tests
-          command: mvn test
+          name: Run Unit Tests
+          command: mvn -Dtest=UserServiceTest -Dsurefire.printSummary=true test
+
+      - run:
+          name: Run Integration Tests
+          command: mvn -Dtest=MySqlUserServiceTest -Dsurefire.printSummary=true test
+
+      - run:
+          name: Run Functional Tests
+          command: mvn -Dtest=CRUDSeleniumTest -Dsurefire.printSummary=true test
 
       - store_test_results:
           path: test-results
+          
       - store_artifacts:
           path: src/screenshots
           destination: screenshots
