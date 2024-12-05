@@ -43,7 +43,8 @@ jobs:
       - store_test_results:
           path: test-results
       - store_artifacts:
-          path: job
+          path: src/screenshots
+          destination: screenshots
 
       - save_cache:
           paths:
