@@ -13,7 +13,7 @@ jobs:
     steps:
       - checkout
 
-      - run: mkdir test-reports
+      - run: mkdir -p src/screenshots
 
       - run:
           name: Install MySQL Client
