@@ -33,9 +33,7 @@ class UserServiceTest {
     // Test cases for creating a new user
     @Test
     public void testCreateUser_Success() {
-        String userName = "testUser";
-        String userEmail = "test@example.com";
-        String userPassword = "securePass";
+        // Womp womp
 
         when(userDaoMock.findByEmail(userEmail)).thenReturn(null);
         when(userDaoMock.save(any(User.class))).thenReturn(1);
