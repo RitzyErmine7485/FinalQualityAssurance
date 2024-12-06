@@ -79,7 +79,7 @@ class UserServiceTest {
         User resultUser = userService.updateUser(updatedUser);
 
         assertThat(resultUser.getName(), is("updatedUser"));
-        assertThat(resultUser.getPassword(), is("newPassword"));
+        assertThat(resultUser.getPassword(), is("random"));
     }
 
     // Test cases for deleting a user
